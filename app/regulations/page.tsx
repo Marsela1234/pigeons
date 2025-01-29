@@ -1,6 +1,6 @@
 import { Header } from '@/components/layout/header'
 
-export default function VipRace() {
+export default function Regulations() {
   return (
     <div className='min-h-screen flex flex-col'>
       <Header />
@@ -8,7 +8,7 @@ export default function VipRace() {
         <div className='max-w-4xl mx-auto space-y-8'>
           <div className='text-center space-y-4'>
             <h1 className='text-3xl font-bold'>
-              FAST PIGEONS VIP RACE 2024-2025 RIMINI-ITALY
+              FAST PIGEONS REGULATIONS 2024-2025 RIMINI-ITALY
             </h1>
             <p className='text-2xl font-semibold'>175,000 € PRIZE MONEY</p>
           </div>
@@ -54,7 +54,7 @@ export default function VipRace() {
             </div>
 
             <div className='space-y-4'>
-              <p>FAST PIGEONS VIP RACE 2024-2025 RIMINI-ITALY</p>
+              <p>FAST PIGEONS REGULATIONS 2024-2025 RIMINI-ITALY</p>
               <p>175,000 € TOTAL PRIZES GUARANTEED 100%</p>
             </div>
           </section>

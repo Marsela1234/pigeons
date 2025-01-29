@@ -5,6 +5,7 @@ import { Mail, Phone } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { MobileSidebar } from './mobile-sidebar'
 
 const languages = [
   { code: 'en', name: 'English', flag: 'gb' },
@@ -14,14 +15,14 @@ const languages = [
 const navigation = {
   en: [
     { name: 'HOME', path: '/' },
-    { name: 'VIP RACE', path: '/vip-race' },
+    { name: 'REGULATIONS', path: '/regulations' },
     { name: 'AGENTS', path: '/agents' },
     { name: 'SPONSORS', path: '/sponsors' },
     { name: 'CONTACT', path: '/contact' },
   ],
   it: [
     { name: 'HOME', path: '/it' },
-    { name: 'VIP RACE', path: '/it/vip-race' },
+    { name: 'REGOLAMENTO', path: '/it/regulations' },
     { name: 'AGENTI', path: '/it/agents' },
     { name: 'SPONSORS', path: '/it/sponsors' },
     { name: 'CONTATTI', path: '/it/contact' },
@@ -74,18 +75,21 @@ export function Header() {
       </div>
       <div className='container mx-auto py-4 px-4'>
         <div className='flex justify-between items-center'>
-          <Link
-            href={language === 'en' ? '/' : '/it'}
-            className='flex items-center gap-2'
-          >
-            <Image
-              src='/placeholder.svg?text=LOGO'
-              alt='Fast Pigeons Rimini'
-              width={200}
-              height={60}
-              className='object-contain'
-            />
-          </Link>
+          <div className='flex items-center gap-4'>
+            <MobileSidebar />
+            <Link
+              href={language === 'en' ? '/' : '/it'}
+              className='flex items-center gap-2'
+            >
+              <Image
+                src='/placeholder.svg?text=LOGO'
+                alt='Fast Pigeons Rimini'
+                width={200}
+                height={60}
+                className='object-contain'
+              />
+            </Link>
+          </div>
           <div className='relative w-full max-w-md mx-4'>
             <input
               type='search'
@@ -97,7 +101,7 @@ export function Header() {
           </div>
         </div>
       </div>
-      <nav className='bg-[#00447C] text-white'>
+      <nav className='bg-[#00447C] text-white hidden md:block'>
         <div className='container mx-auto'>
           <ul className='flex'>
             {navigation[language].map((item) => (
