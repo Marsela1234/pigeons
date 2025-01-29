@@ -35,7 +35,7 @@ export function Header() {
 
   return (
     <header className='w-full'>
-      <div className='bg-[#F18700] text-white py-2 px-4'>
+      <div className='bg-[#1E3A8A] text-white py-2 px-4'>
         <div className='container mx-auto flex justify-between items-center'>
           <div className='flex items-center gap-4'>
             <Link
