@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CalendarDays, Info, MapPin } from "lucide-react";
+import { Info, MapPin } from "lucide-react";
 
 interface RegulationsContentProps {
   language: "en" | "it";
