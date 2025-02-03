@@ -63,7 +63,7 @@ export function Header() {
                 }`}
               >
                 <Image
-                  src={`/placeholder.svg?text=${lang.flag}`}
+                  src={"/logo.jpg"}
                   alt={lang.name}
                   fill
                   className="object-cover"
@@ -82,9 +82,9 @@ export function Header() {
               className="flex items-center gap-2"
             >
               <Image
-                src="/placeholder.svg?text=LOGO"
+                src="/logo.jpg"
                 alt="Fast Pigeons Rimini"
-                width={200}
+                width={100}
                 height={60}
                 className="object-contain"
               />
