@@ -11,7 +11,7 @@ export function Hero({ language }: HeroProps) {
     en: {
       subtitle: "Derby Albania OLR",
       title: "Derby Albania One Loft Race",
-      cta: "VIEW REGULATIONS",
+      cta: "VIEW REGISTRATION",
     },
     it: {
       subtitle: "FAST PIGEONS RIMINI",
@@ -37,9 +37,7 @@ export function Hero({ language }: HeroProps) {
             </h1>
             <p className="text-xl text-gray-200 max-w-lg"></p>
             <Button size="lg" asChild>
-              <Link
-                href={language === "en" ? "/regulations" : "/it/regulations"}
-              >
+              <Link href={language === "en" ? "/pdf.pdf" : "/it/pdf.pdf"}>
                 {t.cta}
               </Link>
             </Button>

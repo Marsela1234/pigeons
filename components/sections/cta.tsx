@@ -29,7 +29,7 @@ export function CTA({ language }: CTAProps) {
         <h2 className="text-3xl font-bold mb-4">{t.title}</h2>
         <p className="text-xl mb-8 max-w-2xl mx-auto">{t.description}</p>
         <Button size="lg" variant="secondary" asChild>
-          <Link href={language === "en" ? "/contact" : "/it/contact"}>
+          <Link href={language === "en" ? "/pdf.pdf" : "/it/pdf.pdf"}>
             {t.cta}
           </Link>
         </Button>
