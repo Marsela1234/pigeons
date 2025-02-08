@@ -11,7 +11,7 @@ export function Hero({ language }: HeroProps) {
     en: {
       subtitle: "Derby Albania OLR",
       title: "Derby Albania One Loft Race",
-      cta: "VIEW REGISTRATION",
+      cta: "DOWNLOAD PDF",
     },
     it: {
       subtitle: "FAST PIGEONS RIMINI",
