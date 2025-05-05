@@ -65,12 +65,13 @@ export default function Contact() {
 
         {/* Image added below the content, before the footer */}
         <div className="mt-12 text-center">
-          <img
-            src="/images/bainf-contact-photo.jpg"
-            alt="Contact"
-            className="mx-auto max-w-full h-auto rounded-lg shadow-lg"
-          />
-        </div>
+  <img
+    src="/images/bainf-contact-photo.jpg"
+    alt="Contact"
+    className="mx-auto max-w-full h-auto rounded-lg shadow-lg"
+  />
+</div>
+
       </main>
     </div>
   );
