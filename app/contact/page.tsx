@@ -57,7 +57,7 @@ export default function Contact() {
           {/* Separate Full-Width Row: Bank Info */}
           <div className="mt-12 space-y-2 bg-gray-100 p-6 rounded-lg shadow-sm">
             <h3 className="text-xl font-semibold text-center">
-              Te dhenat bankare / Banc account information
+              Te dhenat bankare / Bank account information
             </h3>
             <div className="grid gap-2">
               <div>
