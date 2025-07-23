@@ -10,6 +10,7 @@ export default function Contact() {
       <Header />
       <main className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto space-y-12">
+          {/* Page title and description */}
           <div className="text-center space-y-4">
             <h1 className="text-3xl font-bold">Contact Us</h1>
             <p className="text-muted-foreground">
@@ -17,7 +18,9 @@ export default function Contact() {
             </p>
           </div>
 
+          {/* Contact Form and Info Grid */}
           <div className="grid gap-8 md:grid-cols-2">
+            {/* Contact Form */}
             <div className="space-y-6">
               <h2 className="text-2xl font-semibold">Send us a message</h2>
               <form className="space-y-4">
@@ -31,6 +34,7 @@ export default function Contact() {
               </form>
             </div>
 
+            {/* Contact Info & Bank Data */}
             <div className="space-y-6">
               <h2 className="text-2xl font-semibold">Contact Information</h2>
               <div className="space-y-4">
@@ -47,31 +51,36 @@ export default function Contact() {
                   <span>Kraps Fier, Albania</span>
                 </div>
               </div>
-              <div className="aspect-video relative">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2867.9762108191837!2d19.559957!3d40.732779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13444c9a599213c1%3A0x62fcf1f73a68c8a1!2zTmVsY29nqWxh!5e0!3m2!1sen!2sus!4v1706576116899!5m2!1sen!2sus"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="absolute inset-0"
-                ></iframe>
+
+              {/* Bank Account Info */}
+              <div className="mt-8 space-y-2 bg-gray-100 p-4 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold">
+                  Te dhenat bankare / Banc account information
+                </h3>
+                <div>
+                  <strong>Nr. i klientit / Customer number:</strong> 002865827
+                </div>
+                <div>
+                  <strong>Mbajtesit e llogarise / Account holders:</strong>{" "}
+                  FRENSIS AJDINAJ PF
+                </div>
+                <div>
+                  <strong>Numri i llogarise / Account number:</strong>{" "}
+                  003591391
+                </div>
+                <div>
+                  <strong>IBAN:</strong> AL75210210800000000003591391
+                </div>
+                <div>
+                  <strong>Monedha / Currency:</strong> EUR
+                </div>
+                <div>
+                  <strong>Swift Code:</strong> EMPOALTRXXX
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        {/* Image added below the content, before the footer */}
-        <div className="mt-12 text-center">
-  <img
-    src="/images/bainf-contact-photo.jpg"
-    alt="Contact"
-    className="mx-auto max-w-full h-auto rounded-lg shadow-lg"
-  />
-</div>
-
       </main>
     </div>
   );
