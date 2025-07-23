@@ -10,7 +10,7 @@ export default function Contact() {
       <Header />
       <main className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto space-y-12">
-          {/* Page title and description */}
+          {/* Title */}
           <div className="text-center space-y-4">
             <h1 className="text-3xl font-bold">Contact Us</h1>
             <p className="text-muted-foreground">
@@ -18,9 +18,9 @@ export default function Contact() {
             </p>
           </div>
 
-          {/* Contact Form and Info Grid */}
+          {/* 2-column layout: Form + Contact Info */}
           <div className="grid gap-8 md:grid-cols-2">
-            {/* Contact Form */}
+            {/* Form */}
             <div className="space-y-6">
               <h2 className="text-2xl font-semibold">Send us a message</h2>
               <form className="space-y-4">
@@ -34,7 +34,7 @@ export default function Contact() {
               </form>
             </div>
 
-            {/* Contact Info & Bank Data */}
+            {/* Contact Info */}
             <div className="space-y-6">
               <h2 className="text-2xl font-semibold">Contact Information</h2>
               <div className="space-y-4">
@@ -51,32 +51,32 @@ export default function Contact() {
                   <span>Kraps Fier, Albania</span>
                 </div>
               </div>
+            </div>
+          </div>
 
-              {/* Bank Account Info */}
-              <div className="mt-8 space-y-2 bg-gray-100 p-4 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold">
-                  Te dhenat bankare / Banc account information
-                </h3>
-                <div>
-                  <strong>Nr. i klientit / Customer number:</strong> 002865827
-                </div>
-                <div>
-                  <strong>Mbajtesit e llogarise / Account holders:</strong>{" "}
-                  FRENSIS AJDINAJ PF
-                </div>
-                <div>
-                  <strong>Numri i llogarise / Account number:</strong>{" "}
-                  003591391
-                </div>
-                <div>
-                  <strong>IBAN:</strong> AL75210210800000000003591391
-                </div>
-                <div>
-                  <strong>Monedha / Currency:</strong> EUR
-                </div>
-                <div>
-                  <strong>Swift Code:</strong> EMPOALTRXXX
-                </div>
+          {/* Separate Full-Width Row: Bank Info */}
+          <div className="mt-12 space-y-2 bg-gray-100 p-6 rounded-lg shadow-sm">
+            <h3 className="text-xl font-semibold text-center">
+              Te dhenat bankare / Banc account information
+            </h3>
+            <div className="grid gap-2">
+              <div>
+                <strong>Nr. i klientit / Customer number:</strong> 002865827
+              </div>
+              <div>
+                <strong>Mbajtesit e llogarise / Account holders:</strong> FRENSIS AJDINAJ PF
+              </div>
+              <div>
+                <strong>Numri i llogarise / Account number:</strong> 003591391
+              </div>
+              <div>
+                <strong>IBAN:</strong> AL75210210800000000003591391
+              </div>
+              <div>
+                <strong>Monedha / Currency:</strong> EUR
+              </div>
+              <div>
+                <strong>Swift Code:</strong> EMPOALTRXXX
               </div>
             </div>
           </div>
@@ -84,4 +84,4 @@ export default function Contact() {
       </main>
     </div>
   );
-} 
+}
